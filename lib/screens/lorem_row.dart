@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoremRow extends StatelessWidget {
   final Color boxColor;
@@ -11,8 +12,8 @@ class LoremRow extends StatelessWidget {
     return Row(
       children: [
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          height: 120, width: 100,
+          margin: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
+          height: 120.h, width: 100.w,
           decoration: BoxDecoration(
               color: boxColor,
               borderRadius: BorderRadius.circular(20)
@@ -24,15 +25,15 @@ class LoremRow extends StatelessWidget {
         Expanded(
             child:Container(
               padding: EdgeInsets.all(35),
-              margin: EdgeInsets.only(top: 20,bottom: 25,right: 20),
+              margin: EdgeInsets.only(top: 20.h,bottom: 25.h,right: 20.w),
               decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(20.r)
               ),
               child: Column(
                 children: [
                   Text("Lorem ipsum" , style: TextStyle(fontWeight: FontWeight.w300),),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 10.h,),
                   Text("Y nada mas!Hala madrid" , style: TextStyle(fontWeight: FontWeight.bold),),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:master_design/screens/profile_screen.dart';
 
 import 'home_Screen.dart';
@@ -28,12 +29,12 @@ class _BottomBarState extends State<BottomBar> {
       backgroundColor: Colors.grey[100],
       bottomNavigationBar: Container(
 
-        height: 50,
-        margin: EdgeInsets.only(left: 30 , right: 30 , bottom: 30),
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        height: 50.h,
+        margin: EdgeInsets.only(left: 30.w , right: 30.w , bottom: 30.h),
+        padding: EdgeInsets.symmetric(horizontal: 20.w),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(20)
+          borderRadius: BorderRadius.circular(20.r)
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
